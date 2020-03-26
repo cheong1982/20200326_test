@@ -633,3 +633,5 @@ api.add_resource(Login, '/api/Login')
 api.add_resource(ReportGraph, '/api/ReportGraph')
 api.add_resource(GroupTree, '/api/GroupTree')
 api.add_resource(SensorDataToDb, '/api/SensorDataToDb')
+
+#깃허브 테스트
