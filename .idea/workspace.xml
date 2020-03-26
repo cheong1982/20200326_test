@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9ddc121-73ed-4646-85a8-49507859d24d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1Txc6fxAc5ETgLhtDa973fdFA8X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/app/scripts/services" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\nec_devices\src\web\app\scripts\services" />
+      <recent name="D:\project\nec_devices\src\web\app\views" />
+      <recent name="D:\project\nec_devices\src\web\app\scripts\controllers" />
+      <recent name="C:\necserver\src\web\app\scripts\directives" />
+      <recent name="C:\necserver\src\web\app\views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9ddc121-73ed-4646-85a8-49507859d24d" name="Default Changelist" comment="" />
+      <created>1547885139283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547885139283</updated>
+      <workItem from="1547885140627" duration="1901000" />
+      <workItem from="1547887120986" duration="1727000" />
+      <workItem from="1547895461140" duration="1783000" />
+      <workItem from="1547897274700" duration="1787000" />
+      <workItem from="1547899206999" duration="1544000" />
+      <workItem from="1547975113322" duration="1806000" />
+      <workItem from="1547976952059" duration="1921000" />
+      <workItem from="1547979047018" duration="946000" />
+      <workItem from="1547981438756" duration="959000" />
+      <workItem from="1547984259088" duration="2344000" />
+      <workItem from="1547988371445" duration="1785000" />
+      <workItem from="1547990255589" duration="2169000" />
+      <workItem from="1547994380738" duration="2515000" />
+      <workItem from="1548165199873" duration="2216000" />
+      <workItem from="1548168813558" duration="2181000" />
+      <workItem from="1574930674348" duration="93000" />
+      <workItem from="1574930779031" duration="2678000" />
+      <workItem from="1575086957288" duration="49947000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="301" y="71" key="SettingsEditor" timestamp="1574930755026">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="71" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1574930755026" />
+    <state x="493" y="34" width="613" height="792" key="find.popup" timestamp="1575289993201">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="493" y="34" width="613" height="792" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1575289993201" />
+  </component>
+</project>

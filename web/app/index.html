@@ -1,0 +1,155 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <!--<title>호서대학교 MOT 데이터 센터 센서 관제</title>-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=1, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css" />
+    <link rel="stylesheet" href="bower_components/select2/select2.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
+
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/container.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/org.css" />
+    <link rel="stylesheet" href="styles/admin.css" />
+    <link rel="stylesheet" href="styles/admin_info.css" />
+    <link rel="stylesheet" href="styles/delete.css" />
+    <link rel="stylesheet" href="styles/alert.css" />
+    <!-- endbuild -->
+</head>
+
+<body id="ng-app" ng-app="intrcApp" ng-controller="ApplicationCtrl">
+<div id="wrap">
+<div id="header">
+    <div class="top_bar"></div>
+    <div class="logo">
+        <a href="./#/">
+            <!--<img src="./images/logo.png" />-->
+        </a>
+    </div>
+
+    <div class="top_menu" ng-class="{'top_menu_active': isAuthenticated}" ng-if="isAuthenticated">
+
+        <form role="form">
+            <button class="btn"  title="myprofile" ng-click="onProfileChange()" style="width:200px";>
+                    <span>{{user_name}}<i class="fa fa-key" style="margin-left: 5px;"></i></span>
+            </button>
+            <button class="btn"  title="myprofile" ng-click="onLogout()">
+                    <span>로그아웃<i class="fa fa-sign-out" style="margin-left: 5px;"></i></span>
+            </button>
+            <!--<a  href="./#/logout" class="btn" title="Logout">-->
+                <!--<i class="fa fa-sign-out"></i> <span>로그아웃</span>-->
+            <!--</a>-->
+        </form>
+    </div>
+
+    <div>
+        <ul class="gnb2" ng-class="{'gnb_acitve': isAuthenticated}" ng-if="isAuthenticated">
+            <li ng-if="isAdmin" ng-class="currentURI()=='org' ? 'current' : ''">
+                <a href="" ng-click="movePage('org')">
+                    <i class="fa fa-sitemap"></i>
+                    <span>센서실시간 모니터링(공장별)</span>
+                </a>
+            </li>
+            <li  ng-if="true" ng-class="currentURI()=='report_graph' ? 'current' : ''">
+                <a href="" ng-click="movePage('report_graph')">
+                    <i class="fa fa-bar-chart"></i>
+                    <span>통계(그래프)</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div id="container" class="container" ng-view=""></div>
+
+<div id="footer">
+    <p class="copy">
+        Copyright © 2020 호서대학교 MOT 데이터 센터 All Rights Reserved.
+    </p>
+</div>
+
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+
+<![endif]-->
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+<script src="bower_components/select2/select2.js"></script>
+<script src="bower_components/angular-ui-select2/src/select2.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="bower_components/ng-file-upload/angular-file-upload.js"></script>
+<script src="bower_components/FileSaver/FileSaver.js"></script>
+<script src="bower_components/js-xlsx-style/dist/xlsx.full.min.js"></script>
+<script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/login.js"></script>
+<script src="scripts/controllers/application.js"></script>
+<script src="scripts/controllers/logout.js"></script>
+<script src="scripts/controllers/nec_org.js"></script>
+<script src="scripts/services/tree.js"></script>
+<script src="scripts/services/authservice.js"></script>
+<script src="scripts/services/duplicate_auth.js"></script>
+<script src="scripts/services/session.js"></script>
+<script src="scripts/services/auth_events.js"></script>
+<script src="scripts/services/authinterceptor.js"></script>
+<script src="scripts/services/env.js"></script>
+<script src="scripts/services/modal.js"></script>
+<script src="scripts/services/common.js"></script>
+<script src="scripts/filter/time.js"></script>
+<script src="scripts/directives/jqdatepicker.js"></script>
+<script src="scripts/services/ksm_utils.js"></script>
+<script src="scripts/controllers/static_gallery.js"></script>
+<script src="scripts/controllers/report_graph.js"></script>
+<script src="scripts/services/api_user.js"></script>
+<script src="scripts/services/api_logout.js"></script>
+<script src="scripts/services/api_report_graph.js"></script>
+<script src="scripts/controllers/highcharts.js"></script>
+<script src="scripts/controllers/vfs_fonts.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+<script src="https://rawgit.com/krispo/angular-nvd3/v1.0.4/dist/angular-nvd3.js"></script>
+<!-- endbuild -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

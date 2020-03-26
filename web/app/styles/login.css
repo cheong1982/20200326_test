@@ -1,0 +1,343 @@
+/* login page */
+.login_top{
+    /*background:#00c4ff;*/
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    width: 100%;
+    height:100px;
+}
+.login_top .title{float:left;width:100%;heigh:100%;font-size: 50px;font-weight: bold;color:#ffffff;text-align: center;}
+
+.login{
+    /*background:#00c4ff;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 344px;
+    height:200px;
+    margin-top: -100px;
+    margin-left: -172px;
+}
+/*
+.slide_box{
+    margin:0 auto;
+    width:370px;
+}
+*/
+.login_text {
+    margin-top: 10px;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.loginForm {
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    margin: 0px auto 0;
+}
+
+.topForm {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto 0;
+}
+
+.loginForm .inputBox {
+    float: right;
+    top:300px;
+    width: 200px;
+    padding-top: 10px;
+    padding-right:10px;
+    padding-left : 10px;
+}
+
+.loginForm input:-webkit-autofill {
+    background-color: red !important;
+}
+.loginForm .inputBox .inp_box:first-child {
+    margin-bottom: 14px;
+}
+
+.loginForm .inputBox .inp_box.inp_box {
+    padding: 0 10px;
+    color: #00c4ff;
+    font-size: 13px;
+    border: 1px solid #d8ecff;
+    width: 170px;
+    height: 33px;
+    line-height: 33px;
+}
+
+
+.loginForm .sign_box {
+    float: right;
+    padding-top: 10px;
+    padding-right:10px;
+}
+
+.loginForm .sign_box_ {
+    float: left;
+    margin-left: 250px;
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+    border: 1px outset #d8ecff;
+}
+
+.inp_submit_button {
+    height: 80px;
+    width: 88px;
+}
+
+.otp_area{width:100%;}
+.otp_area .otp_wrap{width:600px;margin:0 auto;}
+.otp_area .otp_sub_menu_area{}
+.otp_area .otp_sub_menu_area .btn-group{float:right;}
+.otp_area .otp_sub_menu_area .btn-group .btn_reset{width:100px;}
+.otp_area .otp_sub_menu_area .btn-group .btn_logout{width:100px;}
+.otp_area .otp_title{margin-top:5px;line-height:18px;text-indent:5px;font-size:13px;font-weight:bold;color:#fff;background-color:#c40452}
+.otp_area .otp_guide{width:580px;margin-left:10px;margin-top:5px;margin-bottom:5px;}
+.otp_area .qrcode_area .qrcode_title{width:300px;margin:0 auto;text-indent:3px;background-color:#666;color:#fff;}
+.otp_area .qrcode_area .qrcode_wrap{width:300px;height:300px;margin:0 auto;}
+.otp_area .qrcode_area .qrcode_guide{text-align:center;}
+.otp_area .set_code_area{margin-top:10px;}
+.otp_area .set_code_area .code_input_area{}
+.otp_area .set_code_area .code_input_area p{text-align:center;}
+.otp_area .set_code_area .code_input_area .code_input_guide_line{font-weight:bold;color:#428bca;}
+.otp_area .set_code_area .code_input_area .code_input_line{}
+.otp_area .set_code_area .code_submit_area{padding-top:5px;}
+.otp_area .set_code_area .code_submit_area .btn{display:block;width:142px;height:25px;margin:0 auto;line-height:12px;font-size:12px;}
+
+.notice_box .notice_table{float:left;width:60%;margin-left:20px;}
+.notice_box .notice_table tbody{border:0;border-bottom:hidden;}
+.notice_box .notice_table tr:hover{background-color: #d9edf7;color:#003eff;cursor:pointer}
+.notice_box .notice_table .title{float:left;width:250px;padding-left:5px;}
+.notice_box .notice_table .date{float:right;padding-right:10px;}
+
+.notice_box .notice_border{width:50%;margin:10px auto;border-top:1px solid #ccc;}
+.notice_box .notice_wrap{width:50%;height:100px;margin:0 auto;}
+.notice_box .notice_img{float:left;padding:25px 30px;margin-top:10px;border-right:1px solid #BBB;}
+
+
+.overflow_dot_login{ /* display "..." */
+  white-space:nowrap;
+  display:block;
+  width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.overflow_dot:hover{
+  overflow:hidden;
+}
+
+.notice_modal_wrap{width:540px;}
+.notice_modal_wrap .notice_title{width:100%;font-size:14px;font-weight:bold;text-align:left;padding:5px 0 5px 10px;background-color:#5b5b5b;color:#fff;}
+.notice_modal_wrap .notice_title .notice_close{float:right;padding-right:10px;}
+.notice_modal_wrap .notice_title .notice_close a{color:#fff;}
+.notice_modal_wrap .notice_title .notice_close a:hover{cursor:pointer;}
+.notice_modal_wrap .notice_content{text-align:left;padding:5px 15px;}
+
+.login .content {
+    width: 324px; /* 324 + 10 + 10 */
+    min-height: 525px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.login .content h3 {
+    color: #ffffff;
+}
+
+.login .content h4 {
+    color: #cf0551;
+}
+
+.login .content h4:hover {
+    color: #ffffff;
+}
+
+.login .content .login-form {
+    width: 324px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.login .content .form-control {
+    background-color: #ffffff;
+    border-radius: 30px !important;
+}
+
+.login .content .form-title {
+    height: 49px;
+    font-size: 26px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.login .content .form-actions {
+    background-color: transparent;
+    clear: both;
+    width: 305px;
+    height: 15px;
+    border: 0px;
+    margin-top: 20px;
+}
+.login .content .form-actions input {
+    display: block;
+    height: 40px;
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 30px;
+    text-align-all: center;
+    font-weight: bold;
+    background-color: #4d4d4d;
+}
+
+.login .content .form-actions .search-field {
+    width: 100%;
+    height: 36px;
+    border-radius: 50px !important;
+    padding: 0px 22px;
+}
+
+.login .content .form-actions .search-field:hover{background: #222222;}
+
+.login .content .form-actions.short {
+    height: 30px;
+    margin-top: 20px;
+}
+
+.login .content .text-center {
+    width: 324px;
+}
+
+.login .content .form-actions .btn {
+    margin-top: 1px;
+    width: 100%;
+}
+
+.login .content .form-actions > .btn-group {
+    width: 100%;
+}
+
+.login .tip-wrap {
+    position: absolute;
+    right: -158px;
+    top: 9px;
+    width: 150px;
+    color: #ffffff;
+}
+
+.login .tip-wrap input[type=checkbox] {
+    z-index: 0;
+    left: 11px;
+    opacity: 1;
+}
+
+.login .content .portlet {
+    margin-top: 40px;
+    width: 324px;
+}
+
+.login .content .portlet > .portlet-title {
+    height: 40px;
+    min-height: 40px;
+    border-bottom: 1px solid #535353;
+}
+
+.login .content .portlet > .portlet-title > .caption {
+    color: #ffffff;
+    padding: 12px 0px 5px 0px;
+    padding: 0;
+    padding-top: 6px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.login .portlet > .portlet-title > .actions {
+    padding: 0;
+}
+
+.login .content .portlet .portlet-title .actions .btn {
+    margin: 2px 0px 0px 0px;
+}
+
+.login .content .portlet > .portlet-body {
+    border-bottom: 1px solid #535353;
+}
+
+.login .content .portlet table {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.login .content .portlet .table > tbody > tr > td,
+.login .content .portlet .table > tbody > tr > th,
+.login .content .portlet .table > tfoot > tr > td,
+.login .content .portlet .table > tfoot > tr > th,
+.login .content .portlet .table > thead > tr > td,
+.login .content .portlet .table > thead > tr > th {
+    border-top: 0;
+    cursor: pointer;
+    color: #ffffff;
+    width: 324px;
+    font-size: 14px;
+}
+
+.login .content .portlet .table .data-text-right {
+    text-align: right;
+}
+
+.login .content .portlet .table .data-text-redution {
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.login .content .portlet .table > tbody > tr > td {
+    height: 30px;
+    padding: 0;
+    color: #ffffff;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.login .content .portlet .table > tbody > tr > td:nth-child(1) {
+    width: 237px;
+    padding-left: 6px;
+}
+
+.login .content .portlet .table > tbody > tr > td:nth-child(2) {
+    width: 87px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.login .content .table-hover > tbody > tr:hover,
+.login .content .table-hover > tbody > tr:hover > td {
+    background: #cf0551 !important;
+}
+
+.login #notice_table {
+    color: #464646;
+}
+
+.login #notice_table_wrapper table {
+    color: #464646;
+}
+
+.control-label {
+    color: #ffffff;
+}

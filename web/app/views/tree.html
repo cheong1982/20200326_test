@@ -1,0 +1,45 @@
+<!-- TREE -->
+<div class="tree_nav">
+
+<!--    <div class="tree_top">-->
+<!--        <div class="top_1">-->
+<!--            <label>검색(순번/이름)</label>-->
+<!--        </div>-->
+<!--        <div class="top_2">-->
+<!--            <input class="select_ui2 input-round" type="text" ng-model="search_p_code" ng-keypress="($event.which === 13)?search_p_code_popup(search_p_code):0"/>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="tree"  ng-style="autoStyleHeight()" style="overflow-x: auto;overflow-y: auto; max-height:100%;" resize header="100" footer="15" obstacle="0">
+        <ul class="tree_view">
+            <li ng-repeat="manager in site_manager">
+                <div ng-class="{'selected': manager.clicked}" class="site" ng-click="onClickManager(manager)">
+                    <span class="overflow_dot" title="{{manager.group_name}}">
+                        <i class="fa" ng-class="{'fa-minus': manager.clicked, 'fa-plus': !manager.clicked}"></i>
+                        {{manager.group_name}}
+                    </span>
+                </div>
+                <ul class="site_tree" ng-if="manager.clicked">
+                    <li ng-repeat="site in site_by_manager" ng-class="{'tree_last_index': $last}">
+                        <div ng-class="{'selected': site.clicked}" class="site" ng-click="onClickSite(site)">
+                            <span class="overflow_dot" title="{{site.group_name}}">
+                                <i class="fa" ng-class="{'fa-minus': site.clicked, 'fa-plus': !site.clicked}"></i>
+                                {{site.group_name}}
+                            </span>
+                    </div>
+                        <ul class="location_tree" ng-if="site.clicked">
+                            <li ng-repeat="location in locations_by_site" ng-class="{'tree_last_index': $last}">
+                                <div ng-class="{'selected': location.clicked}" class="location" ng-click="onClickLocation(location)">
+                                    <span class="overflow_dot" title="{{location.group_name}}">
+                                        <label ng-if="location.select">{{location.group_name}}</label>
+                                        <span ng-if="!location.select">{{location.group_name}}</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+         </ul>
+    </div>
+</div>
+<!-- //TREE -->

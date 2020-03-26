@@ -1,0 +1,29 @@
+<style>
+    div_ {
+        border: 3px solid blue;
+    }
+</style>
+<div class="login_top">
+    <div class="title">
+        <label> 호서대 MOT 데이터센터 5G 센서 관제 시스템</label>
+    </div>
+</div>
+
+<div class="login">
+    <div class="content">
+        <div class="form-group">
+            <input type="text" maxLangth="50" class="form-control input-field" ng-model="credentials.userID"
+                         placeholder="아이디" ref="id"></input>
+        </div>
+        <div class="form-group">
+            <input type="password" maxLangth="20" class="form-control input-field" placeholder="비밀번호" ng-model="credentials.userPW" ng-keypress="($event.which === 13)?login(credentials):0"></input>
+        </div>
+        <div class="form-actions">
+            <form method="post" name="loginForm" ng-submit="login(credentials)" novalidate form-autofill-fix>
+                <input type="submit" class="btn search-field" value="로그인" />
+            </form>
+        </div>
+    </div>
+
+</div>
+

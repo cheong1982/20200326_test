@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8acf8e9-9d30-420a-a23f-1faa1c3bd1bc" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1UkKmrhDVlTG3ADcoecmXME5tNA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\nec_devices\src\web\app\views" />
+      <recent name="D:\project\nec_devices\src\web\app\scripts\controllers" />
+      <recent name="D:\project\nec_devices\src\web\app\scripts\services" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8acf8e9-9d30-420a-a23f-1faa1c3bd1bc" name="Default" comment="" />
+      <created>1551674113840</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551674113840</updated>
+      <workItem from="1575895318447" duration="8126000" />
+      <workItem from="1576153491999" duration="21112000" />
+      <workItem from="1576336697591" duration="18432000" />
+      <workItem from="1576638049451" duration="12097000" />
+      <workItem from="1576857046532" duration="2912000" />
+      <workItem from="1577108870102" duration="12000" />
+      <workItem from="1577688057917" duration="9747000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="514" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576640163682">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="514" y="298" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1576640163682" />
+    <state x="521" y="171" width="540" height="524" key="StructurePopup" timestamp="1576855030976">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="521" y="171" width="540" height="524" key="StructurePopup/0.0.1600.860@0.0.1600.860" timestamp="1576855030976" />
+    <state x="493" y="166" width="613" height="528" key="find.popup" timestamp="1577758196283">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="493" y="166" width="613" height="528" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1577758196283" />
+  </component>
+</project>

@@ -1,0 +1,65 @@
+.delete_wrap{
+    padding:10px;
+    width:350px;
+}
+
+.delete_wrap .title{
+    padding:0;
+    margin:0;
+    background-color:#999;
+    color:#fff;
+    text-align:left;
+    text-indent:5px;
+    line-height:25px;
+    font-weight:bold;
+}
+
+.delete_wrap .del_confirm_box{border:1px solid #ccc;}
+
+.delete_wrap .del_confirm_box .del_content{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.delete_wrap .del_confirm_box .del_btn_area{
+    padding-bottom:10px;
+}
+
+.delete_wrap .del_confirm_box .del_btn_area .btn{
+    width:50px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.delete_display_wrap{
+    padding:10px;
+    width:500px;
+}
+.delete_display_wrap .title{
+    padding:0;
+    margin:0;
+    background-color:#999;
+    color:#fff;
+    text-align:left;
+    text-indent:5px;
+    line-height:25px;
+    font-weight:bold;
+}
+.delete_display_wrap .del_confirm_box{border:1px solid #ccc;}
+.delete_display_wrap .del_confirm_box .del_content{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.delete_display_wrap .del_confirm_box .del_btn_area{
+    padding-bottom:10px;
+}
+.delete_display_wrap .del_confirm_box .del_btn_area .btn{
+    width:50px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+.delete_display_table{width:100%;margin-bottom:10px;}
+.delete_display_table tr:hover{background-color:#d9edf7;}
+.delete_display_table tr th{background-color:#e0e0e0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.delete_display_table th{text-align:center;}

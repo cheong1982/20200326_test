@@ -1,0 +1,38 @@
+
+<div class="live_wrap">
+    <!-- Tree -->
+    <div ng-include="tree_uri" class="tree_area" ng-if="isPopup != true"></div>
+    <!-- //Tree -->
+
+    <!-- Live Content -->
+
+    <div class="live_content" ng-style="isPopup && {'margin-left':'0px','margin-top':'-300px'} || {'margin-left': '300px'}" style="width: 1600px;">
+        <div style="float:left;width:40%;height:400px;">
+            <nvd3 options="options1" data="sensor_graph1"></nvd3>
+            <nvd3 options="options2" data="sensor_graph2"></nvd3>
+        </div>
+        <div style="float:left;width:40%;height:400px;">
+            <nvd3 options="options3" data="sensor_graph3"></nvd3>
+            <nvd3 options="options4" data="sensor_graph4"></nvd3>
+        </div>
+        <div style="float:left;width:40%;height:400px;">
+            <nvd3 options="options5" data="sensor_graph5"></nvd3>
+            <nvd3 options="options6" data="sensor_graph6"></nvd3>
+        </div>
+        <div style="float:left;width:40%;height:400px;">
+            <nvd3 options="options7" data="sensor_graph7"></nvd3>
+            <nvd3 options="options8" data="sensor_graph8"></nvd3>
+        </div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 40px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 130px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 220px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 310px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 440px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 530px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 620px;"></div>
+        <div ng-show="run" style="background-color: red;width: 80%;position: absolute;height: 1px;top: 710px;"></div>
+
+    </div>
+
+
+</div>

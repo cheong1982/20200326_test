@@ -1,0 +1,9 @@
+<ul>
+    <!-- For Member -->
+    <li class="my_information" ng-repeat="menu in report_nav_menu">
+        <a ng-href="{{menu.a_href}}" ng-class="{'active': onActiveMenu(currentURI(), menu.link_tag)}">
+            <i class="fa fa-gear"></i> <span>{{menu.title}}</span>
+        </a>
+    </li>
+    <!-- //For Member -->
+</ul>
